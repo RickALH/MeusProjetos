@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title> Controle de Estoque </title>
+</head>
+<body>
+    <header>
+        <h1>CONTROLE DE ESTOQUE</h1>
+    </header>
+    <main>
+        <section>
+            <p>Produtos cadastrados: <span id="total-produtos">0</span></p>
+            <p>Estoques baixos: <span id="estoque-baixo"></span>0</p>
+        </section>
+        <section>
+            <h2>Cadastrar Produto</h2>
+            <div>
+                <input type="text" id="nome-produto" placeholder="Nome do Produto">
+                <input type="number" id="quantidade-produto" placeholder="Quantidade">
+            </div>
+
+            <button id="botao-cadastrar">Cadastrar</button>
+        </section>
+        <section>
+            <div>
+                <input type="text" id="pesquisa-produto" placeholder="Nome do Produto">
+            </div>
+            <button id="buscar-produto">Buscar</button>
+            <div id="resultado"></div>
+        </section>
+    </main>
+</body>
+</html>
